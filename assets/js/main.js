@@ -7,14 +7,14 @@
 	});
 
 	// Header Sticky
-	$(window).on('scroll',function() {
-		if ($(this).scrollTop() > 120){  
-			$('.navbar-area').addClass("is-sticky");
-		}
-		else{
-			$('.navbar-area').removeClass("is-sticky");
-		}
-	});
+	// $(window).on('scroll',function() {
+	// 	if ($(this).scrollTop() > 120){  
+	// 		$('.navbar-area').addClass("is-sticky");
+	// 	}
+	// 	else{
+	// 		$('.navbar-area').removeClass("is-sticky");
+	// 	}
+	// });
 
 	// Trusted By Slides
 	$('.trusted-by-slides').owlCarousel({

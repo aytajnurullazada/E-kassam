@@ -42,10 +42,10 @@ Default CSS
 :root {
   --fontSize: 14px;
   --transition: .5s;
-  --mainColor: #ED2775;
+  --mainColor: #fece2f;
   --whiteColor: #ffffff;
-  --blackColor: #262A37;
-  --gradientColor: linear-gradient(44.44deg, #ED2775 7.79%, #FF7448 94.18%);
+  --blackColor: #1a1a1a;
+  --gradientColor: linear-gradient(279.99deg, #fece2f -5.19%, #fece2f 40.96%);
   --paragraphColor: #716c80;
   --fontFamily: 'Inter', sans-serif;
 }
@@ -151,6 +151,7 @@ p:last-child {
 .default-btn {
   z-index: 1;
   border: none;
+  background-color: #3b3b3b !important;
   position: relative;
   padding: 12px 35px;
   border-radius: 30px;
@@ -158,8 +159,8 @@ p:last-child {
   color: var(--whiteColor);
   -webkit-transition: var(--transition);
   transition: var(--transition);
-  -webkit-box-shadow: 0px 12px 35px rgba(237, 39, 117, 0.25);
-          box-shadow: 0px 12px 35px rgba(237, 39, 117, 0.25);
+  -webkit-box-shadow: 0px 12px 35px rgba(152, 152, 152, 0.25);
+          box-shadow: 0px 12px 35px rgba(198, 198, 198, 0.25);
   font-size: var(--fontSize);
   font-weight: 600;
 }
@@ -175,7 +176,7 @@ p:last-child {
   bottom: 0;
   z-index: -1;
   border-radius: 30px;
-  background: var(--gradientColor);
+  background: #1a1a1a;
 }
 
 .default-btn:hover {
