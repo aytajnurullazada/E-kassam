@@ -21,7 +21,21 @@
 
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
 </head>
-
+<style>
+    .info{
+        margin-top: 32px;
+    }
+    .item{
+        padding: 4px 0;
+    }
+    .item-title{
+        width: 50%;
+    }
+    .item-dec{
+        font-weight: 700;
+        width: 100%;
+    }
+</style>
 <body>
 
     <div class="navbar-area">
@@ -229,11 +243,51 @@
     <!-- End About Area -->
 
     <!-- Start Products Area -->
+    <!-- Button trigger modal -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1638913971251-832d29947de6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="item d-flex">
+                            <span class="item-title">Sistem</span>
+                            <span class="item-dec">Secure Android 7.1</span>
+                        </div>
+                        <div class="item d-flex">
+                            <span class="item-title">Təhlükəsizlik</span>
+                            <span class="item-dec">PCI PTS 5.0, SRED</span>
+                        </div>
+                        <div class="item d-flex">
+                            <span class="item-title">Prosessor</span>
+                            <span class="item-dec">Quad-Core@ 1.1GHz or 1.3GHz</span>
+                        </div>
+                        <div class="item d-flex">
+                            <span class="item-title">Yaddaş</span>
+                            <span class="item-dec">1GB RAM, 8GB Flash or 2GB RAM, 16GB Flash</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="features-area ptb-100 bg-F7F7FF">
         <div class="container">
             <div class="section-title">
-                <span class="sub-title">KEY FEATURES</span>
-                <h2>Most Probably Included Best Features Ever</h2>
+                <h2>Məhsullar</h2>
             </div>
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-6 col-sm-6 col-md-6">
@@ -260,9 +314,11 @@
                                 <h3>Wizar POS Q2​ Most Affordable Smart POS​​</h3>
                                 <p>KASSAM.az​ proqram təminatı pos-kassa cihazlarında onlayn ödənişləri həyata keçirmək
                                     imkanı verir​</p>
-                                <div style="width: 100%;" class="view-more-box">
-                                    <a href="features-1.html" class="default-btn">Daha Ətraflı​</a>
+                                <div style="width: 100%;" class="view-more-box" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    <a style="cursor: pointer;" class="default-btn ">Daha Ətraflı​</a>
                                 </div>
+                                
+
                             </div>
                             <div class="">
                                 <img src="/assets/img/partner/img4.jpg" alt="">
@@ -403,44 +459,38 @@
     <div class="contact-area ptb-100">
         <div class="container">
             <div class="section-title">
-                <h2>Get in Touch</h2>
-                <p>The IT industry offers a sea of options, from platforms, programming languages methodologies, technologies, tools, and more.</p>
+                <h2>24/7 texniki dəstək
+                </h2>
+                <p>Kassa aparatlarımızda yaranmış hər hansı problemlərin həlli ilə bağlı operatorlarımız və texniki
+                    dəstək qruplarımız 24/7 xidmətinizdədir.
+                </p>
             </div>
             <div class="contact-form">
                 <form id="contactForm">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="form-group">
-                                <input type="text" name="name" class="form-control" id="name" required data-error="Please enter your name" placeholder="Eg: Sarah Taylor">
+                                <input type="text" name="name" class="form-control" id="name" required
+                                    data-error="Adınızı daxil edin" placeholder="Adınız, Soyadınız">
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="form-group">
-                                <input type="email" name="email" class="form-control" id="email" required data-error="Please enter your email" placeholder="hello@sarah.com">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="form-group">
-                                <input type="text" name="phone_number" class="form-control" id="phone_number" required data-error="Please enter your phone number" placeholder="Enter your phone number">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="form-group">
-                                <input type="text" name="msg_subject" class="form-control" id="msg_subject" placeholder="Enter your subject" required data-error="Please enter your subject">
+                                <input type="text" name="phone_number" class="form-control" id="phone_number" required
+                                    data-error="Əlaqə nömrəsini daxil edin" placeholder="Əlaqə nömrəniz">
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="form-group">
-                                <textarea name="message" id="message" class="form-control" cols="30" rows="6" required data-error="Please enter your message" placeholder="Enter message..."></textarea>
+                                <textarea name="message" id="message" class="form-control" cols="30" rows="6" required
+                                    data-error="Mesajınızı daxil edin" placeholder="Mesaj"></textarea>
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12">
-                            <button type="submit" class="default-btn"><i class='bx bx-paper-plane'></i> Send Message</button>
+                            <button type="submit" class="default-btn"><i class='bx bx-paper-plane'></i>Göndər</button>
                             <div id="msgSubmit" class="h3 text-center hidden"></div>
                             <div class="clearfix"></div>
                         </div>
@@ -450,7 +500,7 @@
         </div>
     </div>
     <!-- End Contact Area -->
-    
+
     <!-- Start Footer Area -->
     <div class="footer-area">
         <div class="container">
@@ -460,20 +510,18 @@
                 </a>
                 <ul class="social-links">
                     <li><a href="#" target="_blank"><i class="ri-facebook-fill"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="ri-twitter-fill"></i></a></li>
                     <li><a href="#" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="ri-messenger-fill"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="ri-github-fill"></i></a></li>
                 </ul>
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Support</a></li>
-                    <li class="nav-item"><a href="privacy-policy.html" class="nav-link">Privacy Policy</a></li>
-                    <li class="nav-item"><a href="faq.html" class="nav-link">FAQ's</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Haqqında</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">E-KASSA nədir?</a></li>
+                    <li class="nav-item"><a href="privacy-policy.html" class="nav-link">Məhsullar</a></li>
+                    <li class="nav-item"><a href="faq.html" class="nav-link">Xidmətlər</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Müştərilərimiz</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Əlaqə</a></li>
                 </ul>
-                <p class="copyright">Copyright @2021 <strong>Pakap</strong>. All Rights Reserved by <a
-                        href="https://envytheme.com/" target="_blank">EnvyTheme</a></p>
+                <!-- <p class="copyright">Copyright @2021 <strong>Pakap</strong>. All Rights Reserved by <a
+                        href="https://envytheme.com/" target="_blank">EnvyTheme</a></p> -->
             </div>
         </div>
     </div>
@@ -499,13 +547,13 @@
         $(document).ready(function () {
             let item = $('.card-item');
             $(item).mouseover(function () {
-               $(this).css("height", "100%")
+                $(this).css("height", "100%")
             });
             $(item).mouseleave(function () {
-               $(this).css("height", "350px")
+                $(this).css("height", "300px")
             });
-            
-        }); 
+
+        });
 
     </script>
 </body>

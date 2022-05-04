@@ -771,7 +771,7 @@ Screenshots Area CSS
 }
 .card-item{
   background-color: white;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 25px;
   height: 300px;
   overflow: hidden;
