@@ -36,7 +36,7 @@ Main Banner Area CSS
   bottom: 200px;
   height: 485px;
   position: absolute;
-  background-image: url(../../img/banner/banner-bg.png);
+  background-image: url(../../img/banner-bg.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -782,10 +782,21 @@ Screenshots Area CSS
   background-color: white;
   border-radius: 10px;
   padding: 25px;
-  height: 300px;
+  height: 320px;
   overflow: hidden;
+  /* box-shadow: 0px 5px 10px 0px #00000080;  */
+  border: 2px solid var(--mainColor);
   white-space: wrap; 
   text-overflow: ellipsis;
+  /* transition: 0.5s; */
+}
+.card-item:hover{
+  /* transform: translateY(-5px); */
+  /* box-shadow: 0px 10px 20px 2px #00000040; */
+}
+.card-item::-webkit-scrollbar{
+  display: none;
+
 }
 .screenshots-slides.owl-theme .owl-nav {
   margin-top: 0;

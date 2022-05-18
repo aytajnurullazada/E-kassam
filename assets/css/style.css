@@ -929,6 +929,15 @@ textarea.form-control {
   }
 }
 
+@media screen and (max-width: 1199px){
+  .single-features-item div{
+    flex-direction: column-reverse;
+    margin-bottom: 12px;
+  }
+  .single-features-item{
+    padding-left: 20px;
+  }
+}
 /* Max width 767px */
 @media only screen and (max-width: 767px) {
   body {
@@ -1021,6 +1030,7 @@ textarea.form-control {
   .container-fluid {
     max-width: 540px;
   }
+
 }
 
 /* Min width 768px to Max width 991px */

@@ -77,6 +77,35 @@
 			}
 		}
 	});
+	$('.about-slides').owlCarousel({
+		nav: true,
+		loop: true,
+		margin: 25,
+		dots: false,
+		autoplay: true,
+		autoplayHoverPause: true,
+		navText: [
+			"<i class='ri-arrow-left-s-line'></i>",
+			"<i class='ri-arrow-right-s-line'></i>",
+		],
+		responsive: {
+			0: {
+				items: 1
+			},
+			576: {
+				items: 1
+			},
+			768: {
+				items: 1
+			},
+			992: {
+				items: 1
+			},
+			1200: {
+				items: 1
+			}
+		}
+	});
 
 	// Feedback Slides
 	$('.feedback-slides').owlCarousel({
